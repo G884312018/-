@@ -21,7 +21,7 @@ function gameStart() {
     s.addEventListener("click", function(){
       if (this.textContent == q[qNum][1]) {
         // alert("正解");
-        Correct.play();
+        correct.play();
         while (cells.firstChild){
           cells.removeChild(cells.firstChild);
         }
@@ -34,7 +34,7 @@ function gameStart() {
         }
         gameStart();
       } else {
-        Wrong.play();
+        wrong.play();
       }
     });
     cells.appendChild(s);
